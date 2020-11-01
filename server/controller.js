@@ -1,20 +1,6 @@
-let bills = [{
-    id: 1,
-    company: "Verizon",
-    dueDate: "11/03/2020",
-    amount: 120.34,
-    paid: false
-}, 
-{
-    id: 2,
-    company: "Optimum",
-    dueDate: "11/05/2020",
-    amount: 90.22,
-    paid: false
-}
-];
+let bills = [{id: 0, company: 'Verizon', dueDate: '2020-11-30', amount: 120.20, paid: false}];
 
-let id = 2;
+let id = 0;
 
 module.exports = {
 

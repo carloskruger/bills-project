@@ -15,5 +15,5 @@ app.post('/api/bills', ctrl.addBill);
 
 const port = 4000;
 
-app.listen(port,() => console.log( `app is listenibng in ${port}`))
+app.listen(port,() => console.log( `app is listening on ${port}`))
 ;
