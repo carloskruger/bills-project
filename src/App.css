@@ -9,7 +9,7 @@
 body {
 	background-color: #0ad4ab;
 	font-family: "Roboto", sans-serif;
-	font-size: large;
+	font-size: 15px;
 }
 
 .form {
@@ -68,6 +68,11 @@ header {
 	justify-content: space-around;
 }
 
+.overdue {
+	color: red;
+	font-weight: bold;
+}
+
 h1 {
 	/* color: #d72631; */
 	color: yellow;
@@ -83,15 +88,15 @@ button {
 	/* background-color: blue; */
 	background-color: darkgreen;
 	color: yellow;
-	width: 130px;
-	height: 40px;
-	font-size: 16px;
+	width: 110px;
+	height: 35px;
+	font-size: 14px;
 	font-family: "Montserrat", sans-serif;
 }
 
 .delbutton {
 	background-color: orange;
-	width: 90px;
+	width: 80px;
 }
 
 input {

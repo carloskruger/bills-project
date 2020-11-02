@@ -16,6 +16,7 @@ class App extends Component {
       company: '',
       amount: 0,
       dueDate: ''
+    
     };
     this.handleCompanyChange =  this.handleCompanyChange.bind(this);
     this.handleAmountChange =  this.handleAmountChange.bind(this);
@@ -117,9 +118,8 @@ class App extends Component {
       this.addBill(company, amount, dueDate)
   }
 
-    
 
- 
+
 
   render() 
 
@@ -175,7 +175,7 @@ class App extends Component {
           {
             this.state.bills.filter(bill => (bill.paid===false)).map((billUnpaid, index) => (
     
-     <div className="unpaidRow" key={index}> {billUnpaid.company} ${parseFloat(billUnpaid.amount,10).toFixed(2)} due: { billUnpaid.dueDate} <button onClick={(e) => this.markBillasPaid(billUnpaid.id, e)}>Mark paid</button>  <button className="delbutton" onClick={(e) => this.deleteBill(billUnpaid.id, e)} >Delete</button> </div>
+     <div className="unpaidRow" key={index}> {billUnpaid.company} ${parseFloat(billUnpaid.amount,10).toFixed(2)} due: { billUnpaid.dueDate} <button onClick={(e) => this.markBillasPaid(billUnpaid.id, e)}>Mark paid</button>  <button className="delbutton" onClick={(e) => this.deleteBill(billUnpaid.id, e)} >Delete</button>  <Duedate dueDate ={ billUnpaid.dueDate } /></div>
   )
   )
   }
